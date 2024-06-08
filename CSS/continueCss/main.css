@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 7px;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+    background-color:black;
+}
+a{
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header{
+    height: 50rem;
+}
+header .bg-img{
+    background-image: url("../../images/tutku.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 50rem;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+    background-position: center;
+
+}
+img{
+    width: 100%;
+    height: auto;
+    
+}
+header h1{
+    font-size: 5rem;
+    padding-top: 200px;
+    color: white;
+}
+
+/* Training CSS */
+#training{
+    color: rgb(84, 84, 84);
+    padding: 1rem;
+}
+
+#training h2{
+    font-size: 5rem;
+    padding: 3rem;
+    margin: 3rem;
+}
+#training .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#training .items .item{
+    width: 33%;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem;
+}
+#training .items .item:hover{
+   background-color: #916a0f;
+   color: black;
+   border-radius: 1rem;
+   cursor: pointer;
+    
+}
+#training .items .item:hover i{
+    color: rgb(84, 84, 84);
+}
+/* Girisim css */
+#girisim .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    
+}
+#girisim .container h2{
+    color: rgb(84, 84, 84);
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+#girisim .container .items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.items .item{
+    width: 100%;
+    margin: 0.5rem;
+    position: relative;
+    max-width: 430px ;
+}
+
+.items .item img{   
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+}
+.items .item .img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #916a0f;
+    border-radius: 0.5rem;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    transition: opacity 0.4s;   
+}
+.items .item .img-overlay p{
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin: 1rem;   
+}
+.items .item:hover .img-overlay{
+    opacity: 0.8;
+}
+/* Copyright css */
+#copyright{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    text-align: center;
+    background-color: rgb(84, 84, 84);
+    color: black;
+}
+#copyright a{
+    color: #916a0f;
+
+}
+#copyright a:hover{
+    opacity: 0.7rem;
+}

@@ -1,0 +1,233 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 350;
+    line-height: 2.1rem;
+    background-color:black;
+}
+
+
+/* Navbar */
+nav{
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-radius: 0.5rem;
+    font-size: 3rem;
+    
+}
+nav .container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#logo-box img{
+    max-width: 70px;
+    height: auto;
+}
+#nav-links ul{
+    display: flex;
+    flex-direction: row;
+}
+#nav-links .nav-item{
+    margin: 1rem;
+}
+#nav-links .nav-item .nav-link{
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: block;
+    letter-spacing: 0.1rem;
+    padding: 1.5rem;
+    transition: all 0.4s;
+}
+#nav-links .nav-item .nav-link:hover{
+    color: rgb(84, 84, 84)   
+}
+
+/* Girisim css */
+#girisim .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    
+}
+#girisim .container h2{
+    color: rgb(84, 84, 84);
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+#girisim .container .items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#girisim .container .items .col{
+    position: relative;
+    left: -8rem;
+    padding-top: 7rem;
+}
+#girisim .container .items .col li{
+    margin-bottom: 3rem;   
+}
+
+.items .item{
+    width: 100%;
+    margin: 0.5rem;
+    position: relative;
+    max-width: 470px ;
+}
+
+.items .item img{   
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+}
+.items .item .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #916a0f;
+    border-radius: 0.5rem;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    transition: opacity 0.4s;   
+}
+.items .item .img-overlay h3{
+    color: #999;
+    background-color: black;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    margin: 3rem;
+
+}
+.items .item .img-overlay p{
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 1rem;
+    
+}
+.items .item .img-overlay ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-top: 1rem;   
+}
+.items .item .img-overlay ul a{
+    padding: 2rem;
+    font-size: 5rem;
+    transition: opacity 0.4s;
+    
+}
+.items .item .img-overlay ul a:hover{
+    color: rgb(84, 84, 84);
+    opacity: 0.6;  
+}
+
+.items .item  .img-overlay .nav-link{
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 2rem;
+    text-align: left;
+}
+.items .item  .img-overlay .nav-link:hover{
+    color: rgb(84, 84, 84);
+}
+.items .item .img-overlay ul{
+    display: flex;
+    flex-direction: row;
+}
+.items .item .img-overlay ul li{
+    background-color: black;
+    color: #999;
+    padding: 0.3rem 1rem;
+    margin: 1rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.items .item:hover .img-overlay{
+    opacity: 0.8;
+}
+
+#ticari .container{
+    display: flex;
+    color: #916a0f;
+    padding: 2rem;
+    text-align: justify;
+    padding-left: 17rem; 
+    padding-right: 8rem;
+    font-weight: 600;
+    font-size: 1.5rem; 
+}
+#ticari .container .baslik{
+    font-size: 3rem;
+    color: rgb(84, 84, 84);
+}
+/* UP */
+a#up{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 4rem;
+    background-color: #916a0f;
+    color: rgb(84, 84, 84);
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a#up i{
+    font-size: 2rem;
+    transition:all 0.4s;
+}
+a#up:hover{
+    background-color: rgb(84, 84, 84);
+    color: #916a0f;
+    cursor: pointer;
+    border: 1px solid #916a0f;  
+}
+/* Copyright css */
+#copyright{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    text-align: center;
+    background-color: rgb(84, 84, 84);
+    color: black;
+}
+#copyright a{
+    color: #916a0f;
+
+}
+#copyright a:hover{
+    opacity: 0.7rem;
+}

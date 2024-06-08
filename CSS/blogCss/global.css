@@ -1,0 +1,12 @@
+/* İMG CSS */
+.img-fluid{
+    max-width: 300px;
+    height: auto;
+    border-radius: 300px;
+    border: 1px soli black;
+}
+.img-fluid-item{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}

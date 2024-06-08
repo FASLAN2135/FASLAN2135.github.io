@@ -1,0 +1,83 @@
+/* BACKGROUND CSS */
+.bg-dark{
+    background-color: #916a0f;
+}
+.bg-light{
+    background-color: #544404;
+}
+/* TEXT CSS */
+.tex-uppercase{
+    text-transform: uppercase;
+}
+.text-center{
+    text-align: center;
+}
+/* İMG CSS */
+.img-fluid{
+    max-width: 500px;
+    height: auto;
+    border-radius: 500px;
+    border: 1px soli black;
+    z-index: -1;
+    
+}
+.img-fluid-item{
+    max-width: 600px;
+    height: auto;
+    border-radius: 0.5rem;
+    
+    
+}
+/* Button CSS */
+.btn{
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 1rem;
+
+}
+.btn-social{
+    background-color: transparent;
+    color: rgb(84, 84, 84);
+    font-size: 6rem;
+    transition: all 0.4sn;
+}
+.btn-social:hover{
+    color: #916a0f;
+
+}
+/* hr and STAR CSS */
+hr.star-light{
+    border-color: #fff;
+}
+hr.star-dark{
+    border-color: rgb(84, 84, 84);
+
+}
+.star-light, .star-dark{
+    border: none;
+    border-top: 0.4rem solid;
+    border-radius: 0.4rem;
+    width: 25%;
+    margin: 2rem auto; 
+    z-index: -1;
+    overflow: visible; 
+    height: 0; 
+}
+.star-light::after, .star-dark::after{
+    content: "\2605";
+    font-weight: bold;
+    font-size: 3rem;
+    position: relative;
+    top: -1.6rem;
+    color: rgb(84, 84, 84);
+    padding: 0 1rem;
+
+}
+.star-light::after{
+    color: #916a0f;
+    background-color: rgb(84, 84, 84);
+}
+.star-dark::after{
+    color:rgb(84, 84, 84);
+    background-color: black;
+}

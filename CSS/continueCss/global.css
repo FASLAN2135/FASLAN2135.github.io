@@ -1,0 +1,35 @@
+.bg-dark-blue{
+    background-color: black;
+}
+.big-light-blue{
+    background-color: #999;
+}
+.heading-small{
+    font-size: 1.25rem;
+}
+.heading-medium{
+    font-size: 1.5rem;
+}
+.heading-big{
+    font-size: 1.75rem;
+}
+.text-center{
+    text-align: center;
+}
+
+/* İMG CSS */
+.img-fluid{
+    max-width: 500px;
+    height: auto;
+    border-radius: 500px;
+    border: 1px soli black;
+    z-index: -1;
+    
+}
+.img-fluid-item{
+    max-width: 600px;
+    height: auto;
+    border-radius: 0.5rem;
+    
+    
+}

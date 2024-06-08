@@ -1,0 +1,6 @@
+#training .items{
+    flex-direction: column;
+}
+#training .items .item{
+    width: 100%;
+}
